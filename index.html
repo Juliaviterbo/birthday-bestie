@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Bestie</title>
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #ffe4ec, #fff);
+      overflow-x: hidden;
+      font-family: 'Playfair Display', serif;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 4.5rem;
+      margin-top: 60px;
+      color: #ff4d88;
+      letter-spacing: 2px;
+      animation: fadeDown 1.5s ease;
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* 🎈 BALÕES */
+    .balloon {
+      position: absolute;
+      bottom: -150px;
+      width: 60px;
+      height: 80px;
+      border-radius: 50%;
+      animation: floatUp linear infinite;
+      opacity: 0.8;
+    }
+
+    .balloon::after {
+      content: '';
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      width: 2px;
+      height: 25px;
+      background: #aaa;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(0); }
+      to { transform: translateY(-120vh); }
+    }
+
+    /* 📸 GALERIA */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin: 100px auto;
+      max-width: 1000px;
+    }
+
+    .polaroid {
+      background: white;
+      padding: 15px 15px 40px;
+      width: 220px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      transform: rotate(var(--rotation));
+      transition: transform 0.3s;
+      animation: fadeUp 1.5s ease;
+    }
+
+    .polaroid:hover {
+      transform: scale(1.05) rotate(0deg);
+    }
+
+    .polaroid img {
+      width: 100%;
+    }
+
+    .caption {
+      text-align: center;
+      margin-top: 10px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.4rem;
+      color: #555;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 💌 TEXTO */
+    .letter {
+      max-width: 800px;
+      margin: 0 auto 100px;
+      padding: 0 25px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.15rem;
+      line-height: 1.9;
+      color: #444;
+      animation: fadeUp 2s ease;
+    }
+
+    .letter p {
+      margin-bottom: 20px;
+    }
+
+    .signature {
+      margin-top: 40px;
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      color: #ff4d88;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HAPPY BIRTHDAY BESTIE!</h1>
+
+  <!-- Balões -->
+  <div class="balloon" style="left: 10%; background:#ff6f91; animation-duration: 12s;"></div>
+  <div class="balloon" style="left: 30%; background:#ffc75f; animation-duration: 10s;"></div>
+  <div class="balloon" style="left: 50%; background:#845ec2; animation-duration: 14s;"></div>
+  <div class="balloon" style="left: 70%; background:#4d96ff; animation-duration: 11s;"></div>
+  <div class="balloon" style="left: 85%; background:#f9a1bc; animation-duration: 13s;"></div>
+
+  <!-- Galeria -->
+  <section class="gallery">
+    <div class="polaroid" style="--rotation:-6deg;">
+      <img src="helo 1.jpg">
+      <div class="caption">us 🤍</div>
+    </div>
+    <div class="polaroid" style="--rotation:4deg;">
+      <img src="helo 2.jpg">
+      <div class="caption">memories</div>
+    </div>
+    <div class="polaroid" style="--rotation:-3deg;">
+      <img src="helo 3.jpg">
+      <div class="caption">forever</div>
+    </div>
+    <div class="polaroid" style="--rotation:6deg;">
+      <img src="helo 4.jpg">
+      <div class="caption">besties ✨</div>
+    </div>
+  </section>
+
+  <!-- Carta -->
+  <section class="letter">
+    <p><strong>feliz vida, minha helo 🤍</strong><br>
+    hoje é o seu dia, mas a verdade é que eu deveria te agradecer todos os dias por existir na minha vida.</p>
+
+    <p>pode passar anos, podem mudar fases, pessoas, cidades e até versões nossas, mas você sempre vai ser minha irmã. daquelas que a vida escolheu pra mim, que o coração reconheceu de primeira e que eu sei que vou levar pra sempre. você me viu crescer, me viu errar, me viu quebrar e mesmo assim nunca soltou minha mão, nem quando eu estava no meu pior.</p>
+
+    <p>obrigada por sempre estar comigo, por me apoiar em tudo, por me incentivar quando eu duvidava de mim mesma, por me lembrar da mulher que eu sou quando eu esquecia. obrigada por ser meu ombro amigo, meu colo, meu abrigo nos dias em que o leo me machucava e eu achava que aquilo era amor. você esteve ali, me segurando, me protegendo e me mostrando que eu merecia muito mais do que dor.</p>
+
+    <p>você é minha base, minha segurança, minha gargalhada em meio ao caos, minha paz em dias turbulentos. com você eu posso ser fraca, forte, sensível, intensa, tudo ao mesmo tempo, porque sei que você me entende, me acolhe e me ama do jeito que eu sou.</p>
+
+    <p>eu amo você de um jeito que não cabe em palavras. amo sua lealdade, seu coração gigante, sua força e a forma linda como você cuida de quem ama. que a vida te devolva em dobro tudo aquilo que você espalha por aí, porque você merece o mundo e muito mais.</p>
+
+    <p>estarei sempre aqui, em qualquer fase, em qualquer versão da vida. hoje e sempre.<br>
+    feliz aniversário, minha irmã. eu te amo demais 🤍✨</p>
+
+    <div class="signature">para sempre nós 🤍</div>
+  </section>
+
+</body>
+</html>
